@@ -1,4 +1,4 @@
-package pl.stacjait.twitter;
+package pl.stacjait.twitter.followers;
 
 import java.util.function.Consumer;
 

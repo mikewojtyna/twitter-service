@@ -1,4 +1,4 @@
-package pl.stacjait.twitter;
+package pl.stacjait.twitter.tweetcrud;
 
 import lombok.Value;
 

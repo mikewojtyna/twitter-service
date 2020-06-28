@@ -1,4 +1,6 @@
-package pl.stacjait.twitter;
+package pl.stacjait.twitter.suggestions;
+
+import pl.stacjait.twitter.tweetcrud.Tweet;
 
 import java.util.Collection;
 

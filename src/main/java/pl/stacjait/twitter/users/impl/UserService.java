@@ -1,4 +1,6 @@
-package pl.stacjait.twitter;
+package pl.stacjait.twitter.users.impl;
+
+import pl.stacjait.twitter.users.primaryports.UpdateProfileCommand;
 
 import java.util.Optional;
 

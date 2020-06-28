@@ -1,4 +1,9 @@
-package pl.stacjait.twitter;
+package pl.stacjait.twitter.suggestions;
+
+import pl.stacjait.twitter.followers.Followers;
+import pl.stacjait.twitter.followers.FollowersService;
+import pl.stacjait.twitter.tweetcrud.Tweet;
+import pl.stacjait.twitter.tweetcrud.TweetCrudService;
 
 import java.util.Collection;
 
@@ -20,13 +25,5 @@ public class SuggestionService {
 			suggestions.addTweets(tweets);
 		});
 		return suggestions;
-	}
-
-	//	@Transactional
-	// transactional makes no sense in distributed systems (most of the time, we don't want to follow 2PC)
-	public void updateInTransaction() {
-		// TODO: consider SAGA and eventual consistency
-		followersService.updateFollowers();
-		tweetCrudService.postTweet(new CreateTweetCommand("aa"));
 	}
 }
