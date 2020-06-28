@@ -1,6 +1,6 @@
 package pl.stacjait.twitter.users.secondaryports;
 
-import pl.stacjait.twitter.users.impl.UserProfile;
+import pl.stacjait.twitter.users.domain.UserProfile;
 
 import java.util.Optional;
 

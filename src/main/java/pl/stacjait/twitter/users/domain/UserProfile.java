@@ -1,4 +1,4 @@
-package pl.stacjait.twitter.users.impl;
+package pl.stacjait.twitter.users.domain;
 
 import lombok.Value;
 

@@ -1,4 +1,4 @@
-package pl.stacjait.twitter.users.adapters.input.localevents;
+package pl.stacjait.twitter.users.adapters.primary.localevents;
 
 import lombok.Value;
 
