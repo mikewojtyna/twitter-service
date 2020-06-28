@@ -5,9 +5,10 @@ import java.util.Collection;
 public class TweetCrudService {
 
 	private TweetsRepository repository;
+	private TweetActivityUpdater tweetActivityUpdater;
 
-	public void postTweet(CreateTweetCommand command) {
-		repository.save(new Tweet(command.getMsg()));
+	public void postTweet(CreateTweetCommand command, String author) {
+		repository.save(new Tweet(command.getMsg(), author));
 	}
 
 	public Collection<Tweet> findAllTweets() {
@@ -15,7 +16,10 @@ public class TweetCrudService {
 	}
 
 	public Collection<Tweet> findRecentTweetsOf(String userId) {
-
 		return null;
+	}
+
+	public void updateUserProfileBecauseOfNewTweet(CreateTweetCommand command, String author) {
+		tweetActivityUpdater.updateTweetActivityForUser(author, new Tweet(command.getMsg(), author));
 	}
 }

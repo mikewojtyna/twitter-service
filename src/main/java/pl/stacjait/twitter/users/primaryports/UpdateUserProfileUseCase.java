@@ -1,5 +1,6 @@
 package pl.stacjait.twitter.users.primaryports;
 
+import pl.stacjait.twitter.users.domain.LastActivity;
 import pl.stacjait.twitter.users.domain.UserProfile;
 import pl.stacjait.twitter.users.domain.UserProfileUpdated;
 import pl.stacjait.twitter.users.secondaryports.FactsPublisher;
@@ -26,5 +27,9 @@ public class UpdateUserProfileUseCase {
 				userDb.save(updatedProfile);
 				factsPublisher.publish(new UserProfileUpdated(Instant.now(), updatedProfile));
 			});
+	}
+
+	public void updateLastActivity(LastActivity lastActivity) {
+		throw new UnsupportedOperationException("Implement this method");
 	}
 }

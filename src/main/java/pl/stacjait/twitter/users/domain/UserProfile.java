@@ -17,4 +17,13 @@ public class UserProfile {
 	String firstName;
 	String lastName;
 	String email;
+	LastActivity lastActivity;
+
+	public UserProfile(UUID id, String firstName, String lastName, String email) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		lastActivity = null;
+	}
 }

@@ -6,4 +6,5 @@ import lombok.Value;
 public class Tweet {
 
 	String msg;
+	String author;
 }
